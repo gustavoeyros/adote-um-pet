@@ -27,7 +27,9 @@ const Pet = mongoose.model(
         available:{
             type: Boolean,
             required: true
-        }
+        },
+        user: Object,
+        adopter: Object
     }, 
     {timestamps: true} //criar os campos de data de criação e atualização no db
     )
