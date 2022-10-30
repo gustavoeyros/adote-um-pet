@@ -3,6 +3,7 @@ const cors = require('cors')
 const app = express()
 const UserRoutes = require('./routes/UserRoutes')
 
+
 //JSON Response
 app.use(express.json())
 
