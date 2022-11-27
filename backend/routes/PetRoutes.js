@@ -7,6 +7,6 @@ const { imageUpload } = require('../helpers/image-upload')
 const verifyToken = require('../helpers/verify-token')
 
 router.post('/create', verifyToken, imageUpload.array('images'), PetController.create)
-
+router.get('/', PetController.getAll)
 
 module.exports = router
